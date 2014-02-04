@@ -1,4 +1,8 @@
 FacebookOnRails::Application.routes.draw do
+  resources :callbacks
+
+  resources :purchase_orders
+
   devise_for :users, controllers: {omniauth_callbacks: 'users/omniauth_callbacks'}
   resources :users
   resources :posts

@@ -36,9 +36,19 @@ gem 'devise'
 #Facebook  Authentication via omniauth
 gem 'omniauth-facebook'
 
+#Adding Flat Design
+gem "flat-ui-rails"
+
+#Adding Koala gem for facabook integration 
+gem "koala", "~> 1.8.0rc1"
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development do
+  gem "rails-erd"
 end
 
 # Use ActiveModel has_secure_password
